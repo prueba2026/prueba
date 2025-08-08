@@ -762,7 +762,16 @@ const CheckoutDetails = ({
           </div>
         ) : (
           <>
-            <span className={styles.whatsappIcon}>📱</span>
+            <div className={styles.whatsappIcon}>
+              <div className={styles.phoneContainer}>
+                <div className={styles.phoneBody}></div>
+                <div className={styles.phoneScreen}></div>
+                <div className={styles.whatsappLogo}>
+                  <div className={styles.logoCircle}></div>
+                  <div className={styles.logoPhone}></div>
+                </div>
+              </div>
+            </div>
             Realizar Pedido por WhatsApp
           </>
         )}

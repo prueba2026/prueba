@@ -38,7 +38,19 @@ const PaymentMethodSelector = ({
             onChange={() => handlePaymentChange(PAYMENT_TYPES.CASH)}
           />
           <label htmlFor="cash-payment" className={styles.paymentLabel}>
-            <div className={styles.paymentIcon}>💵</div>
+            <div className={`${styles.paymentIcon} ${styles.cashIcon}`}>
+              <div className={styles.iconContainer}>
+                <div className={styles.billStack}>
+                  <div className={styles.bill}></div>
+                  <div className={styles.bill}></div>
+                  <div className={styles.bill}></div>
+                </div>
+                <div className={styles.coins}>
+                  <div className={styles.coin}></div>
+                  <div className={styles.coin}></div>
+                </div>
+              </div>
+            </div>
             <div className={styles.paymentInfo}>
               <h5>Pago en Efectivo</h5>
               <p>Paga directamente en la tienda al momento de la entrega o recogida</p>
@@ -68,7 +80,23 @@ const PaymentMethodSelector = ({
             onChange={() => handlePaymentChange(PAYMENT_TYPES.BANK_TRANSFER)}
           />
           <label htmlFor="bank-transfer" className={styles.paymentLabel}>
-            <div className={styles.paymentIcon}>🏦</div>
+            <div className={`${styles.paymentIcon} ${styles.bankIcon}`}>
+              <div className={styles.iconContainer}>
+                <div className={styles.bankBuilding}>
+                  <div className={styles.bankRoof}></div>
+                  <div className={styles.bankBody}>
+                    <div className={styles.bankColumn}></div>
+                    <div className={styles.bankColumn}></div>
+                    <div className={styles.bankColumn}></div>
+                  </div>
+                  <div className={styles.bankBase}></div>
+                </div>
+                <div className={styles.transferArrows}>
+                  <div className={styles.arrow}></div>
+                  <div className={styles.arrow}></div>
+                </div>
+              </div>
+            </div>
             <div className={styles.paymentInfo}>
               <h5>Transferencia Bancaria</h5>
               <p>Realiza el pago mediante transferencia bancaria antes de la entrega</p>
