@@ -230,7 +230,7 @@ export function NovelasModal({ isOpen, onClose }: NovelasModalProps) {
 
     const { cashNovelas, transferNovelas, cashTotal, transferBaseTotal, transferFee, transferTotal, grandTotal, totalCapitulos } = totals;
     
-    let message = "Estoy interesado en el catálogo de novelas\nQuiero encargar los títulos o el título:\n\n";
+    let message = "Me interesan los siguientes títulos:\n\n";
     
     // Novelas en efectivo
     if (cashNovelas.length > 0) {
